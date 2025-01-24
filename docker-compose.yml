@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/workspace
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootterra123
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: terra
+      MYSQL_PASSWORD: terra123
+    ports:
+      - "3306:3306"
