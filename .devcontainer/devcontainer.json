@@ -1,19 +1,18 @@
 {
-    "name": "Web Dev Environment",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "forwardPorts": [3000, 3306],
-    "postCreateCommand": "npm install",
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "dbaeumer.vscode-eslint",
-          "esbenp.prettier-vscode",
-          "ms-python.python",
-          "ms-azuretools.vscode-docker"
-        ]
-      }
+  "name": "Web Development Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+      ]
     }
   }
-  
+}

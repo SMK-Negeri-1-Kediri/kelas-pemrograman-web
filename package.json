@@ -1,13 +1,12 @@
 {
-    "name": "my-web-project",
-    "version": "1.0.0",
-    "description": "Web development project in GitHub Codespace",
-    "main": "server.js",
-    "scripts": {
-      "start": "node server.js"
-    },
-    "dependencies": {
-      "express": "^4.18.2"
-    }
+  "name": "web-development-project",
+  "version": "1.0.0",
+  "description": "Basic Web Development Project in GitHub Codespace",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
-  
+}
